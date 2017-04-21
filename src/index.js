@@ -1,3 +1,3 @@
-import LivePhotosContainer from './LivePhotosKitReact';
+import LivePhotosKitReact from './LivePhotosKitReact';
 
-module.exports = LivePhotosContainer;
+module.exports = LivePhotosKitReact;
