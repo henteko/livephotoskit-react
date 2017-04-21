@@ -1,10 +1,10 @@
 {
-  "name": "livephotoskit-react",
+  "name": "@henteko/livephotoskit-react",
   "version": "1.0.0",
   "description": "livephotoskit for react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir lib"
   },
   "keywords": [
     "livephotoskit",

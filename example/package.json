@@ -1,0 +1,28 @@
+{
+  "name": "@henteko/livephotoskit-react-example",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_PATH=node_modules browserify index.js -o bundle.js -t babelify",
+    "watch": "NODE_PATH=node_modules watchify index.js -o bundle.js -t babelify",
+    "link": "cd .. && npm link && cd example && npm link @henteko/livephotoskit-react",
+    "serve": "budo -o",
+    "start": "npm-run-all -p watch serve",
+    "full-start": "cd ../ && npm run build && cd example && npm run start"
+  },
+  "author": "henteko",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
+    "budo": "^10.0.0",
+    "npm-run-all": "^4.0.2",
+    "watchify": "^3.9.0"
+  }
+}
