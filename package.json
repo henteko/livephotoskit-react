@@ -11,5 +11,9 @@
     "react"
   ],
   "author": "henteko",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "livephotoskit": "^1.4.6",
+    "react": "^15.5.4"
+  }
 }
