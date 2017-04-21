@@ -10,6 +10,10 @@
     "livephotoskit",
     "react"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henteko/livephotoskit-react.git"
+  },
   "author": "henteko",
   "license": "ISC",
   "dependencies": {
