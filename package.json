@@ -1,6 +1,6 @@
 {
   "name": "@henteko/livephotoskit-react",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "livephotoskit for react",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "author": "henteko",
   "license": "ISC",
   "dependencies": {
-    "livephotoskit": "^1.4.6",
+    "livephotoskit": "^1.4.8",
     "prop-types": "^15.5.8",
     "react": "^15.5.4"
   },

@@ -7,11 +7,11 @@ class LivePhotosKitReact extends Component {
     const {
       photoSrc,
       videoSrc,
-      canPlay,
-      error,
-      ended,
-      photoLoad,
-      videoLoad,
+      onCanPlay,
+      onError,
+      onEnded,
+      onPhotoLoad,
+      onVideoLoad,
       playbackStyle,
       style,
     } = this.props;
@@ -22,24 +22,24 @@ class LivePhotosKitReact extends Component {
     this._player.photoSrc = photoSrc;
     this._player.videoSrc = videoSrc;
     this._player.addEventListener('canplay', evt => {
-      if (canPlay === undefined) { return; }
-      canPlay(evt);
+      if (onCanPlay === undefined) { return; }
+      onCanPlay(evt);
     });
     this._player.addEventListener('error', evt => {
-      if (error === undefined) { return; }
-      error(evt);
+      if (onError === undefined) { return; }
+      onError(evt);
     });
     this._player.addEventListener('ended', evt => {
-      if (ended === undefined) { return; }
-      ended(evt);
+      if (onEnded === undefined) { return; }
+      onEnded(evt);
     });
     this._player.addEventListener('videoload', evt => {
-      if (videoLoad === undefined) { return; }
-      videoLoad(evt);
+      if (onVideoLoad === undefined) { return; }
+      onVideoLoad(evt);
     });
     this._player.addEventListener('photoload', evt => {
-      if (photoLoad === undefined) { return; }
-      photoLoad(evt);
+      if (onPhotoLoad === undefined) { return; }
+      onPhotoLoad(evt);
     });
     this._player.playbackStyle = playbackStyle;
 
@@ -70,7 +70,7 @@ class LivePhotosKitReact extends Component {
     this._player.currentTime = currentTime;
   }
 
-  get livephotoskit () {
+  get player () {
     return this._player;
   }
 
@@ -92,11 +92,11 @@ class LivePhotosKitReact extends Component {
 LivePhotosKitReact.propTypes = {
   photoSrc: PropTypes.string.isRequired,
   videoSrc: PropTypes.string.isRequired,
-  canPlay: PropTypes.func,
-  error: PropTypes.func,
-  ended: PropTypes.func,
-  photoLoad: PropTypes.func,
-  videoLoad: PropTypes.func,
+  onCanPlay: PropTypes.func,
+  onError: PropTypes.func,
+  onEnded: PropTypes.func,
+  onPhotoLoad: PropTypes.func,
+  onVideoLoad: PropTypes.func,
   playbackStyle: PropTypes.string,
   style: PropTypes.object,
 };
