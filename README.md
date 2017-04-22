@@ -1,4 +1,5 @@
 # LivePhotosKit React
+[![Build Status](https://travis-ci.org/henteko/livephotoskit-react.svg?branch=master)](https://travis-ci.org/henteko/livephotoskit-react)
 
 Simple LivePhotosKit component.
 
