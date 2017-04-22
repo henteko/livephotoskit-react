@@ -1,8 +1,16 @@
 language: node_js
 node_js:
-  - "7"
+- '7'
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm run lint
+- npm run build
+- npm run lint
+deploy:
+  provider: npm
+  email: henteko07@gmail.com
+  on:
+    tags: true
+  api_key:
+    secure: CI8rKcBCZdQpcnzbZPsW6VJL1AmispIRI6rSrEXnFbtAa/H37FuNbuLUv+QWcx4JLqlnLYH7vI9Gb8utFLfFMhnceVdq5lwX0E1sAcYbdzx2++S6djjdVeO6NtSM9lQIydQAwqZI7dV6aBfCQe3F5XE3SoRKMVjVi/uxA4oGAa7vek4taAf2kKEt0mLsKklD4swiEcFKSA53PfDiHTcPw4N1INkRrlaSpce+nayHRYBJLgTaQ3HcNPnxLum7xTH9/Q8zKwdj1MiYMZCrawpeKG1Uyq3ZlnZJJoNoD+uIhi9299IAyz6Pk5XqmzaecZkv4yRHgMwgqDMgi5lGt5mDb+syluwPs7HKheTAdhAcl44DtwREmZkz2+DpH/62dTv0RLe1OjA1vrp79fRO0PkH4jdLwv88Q977Dw7Cb1BDOXMAjlO4yGYSg3Y7lYErID4Dp78m4MI4UdJgeizTd8AElaRSiYVOu8SmLc+dNHjhvAfP9CkfPH7OM+WDY+tOm88jTyNl25tKQstdckCkREyhwuRiR0qhnSySGKut+DASa09Oid8fCcHrvkCbdfcypeO4lQaPMb9So8Yp+79euWtfe1KREMCNQ/ZWggTBQerBhGZvHpaBEDXKSWB1WnCSyTYJ5wlsR5pi8VuYBx5jKw6sjAKKK7t3dJBjNeKgLUAdbYI=

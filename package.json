@@ -1,6 +1,6 @@
 {
   "name": "@henteko/livephotoskit-react",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "livephotoskit for react",
   "main": "index.js",
   "scripts": {
